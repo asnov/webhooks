@@ -6,10 +6,11 @@ import 'dotenv/config';
 
 const port = process.env.PORT || 3000;
 const apiKey = process.env.API_KEY || '';
+const endpoint = process.env.END_POINT;
 const webhookPath = process.env.WEBHOOK_PATH || '';
 
 const app = express();
-const client = new CrypoBotAPI(apiKey);
+const client = new CrypoBotAPI(apiKey, endpoint);
 
 
 client.on('paid', (invoice, requestDate) => {
