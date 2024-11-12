@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "crypto-bot-api": "^0.3.3",
+    "express": "^4.21.1"
+  }
+}
